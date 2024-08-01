@@ -7,8 +7,9 @@ const app = express();
 
 // Settings
 
-// Moddlewares
-app.use(morgan('dev'))
+// Middlewares
+app.use(morgan('dev'));
+app.use(express.json());
 
 // Routes
 app.use(userRoutes);
